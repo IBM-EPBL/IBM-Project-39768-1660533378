@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style2.css') }}">
+    <title>Recognize</title>
+    <title>Recognize</title>
+</head>
+<body>
+    <div id="label"><div id="label2"><span><a href="/">Home</a></span><span><a href="/upload">Recognize</a></label></span></div></div>
+    <div id="parent">
+        <div id="p1">
+            <h1>Digit Recognition</h1>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <label id="imglb" for="file">Choose...</label>
+                <input type="file" name="file" id="file" hidden><br>
+                <input type="submit" id="submit" name="submit" value="Recognize"{{button}}><br>
+                <img src="data:image/png;base64,{{ data}}" id="imgpic" alt="" srcset=""{{show}}>
+            </form>
+
+        </div>
+        <div id="child">
+            {{ output }}
+            <img src="data:image/png;base64,{{ bar }}" id="img_show" alt="" srcset=""{{show}}>
+            
+            
+        </div>
+
+    </div>
+
+        
+    
+</body>
+</html>
