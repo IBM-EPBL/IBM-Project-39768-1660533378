@@ -1,0 +1,41 @@
+span{
+    background-color: ivory;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
+#label{
+    opacity: 0.6;
+    height: 40px;
+    width: 100%;
+    border: 2px solid ;
+    border-radius: 10px ;
+    background-color: rgb(227, 234, 235);
+}
+#label2{
+    padding-top: .2cm;
+    /*padding-right: ;*/
+    padding-bottom: .5cm;
+    padding-left: 1000px;
+    font-size: .7cm;
+}
+span{
+    padding-right: 1cm;
+    background-color: transparent;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 1cm;
+}
+p{
+    padding-top: 1cm;
+    font-size: .7cm;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
